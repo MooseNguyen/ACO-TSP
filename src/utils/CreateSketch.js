@@ -53,7 +53,7 @@ export function CreateSketch(p) {
     }
     if (action === 'start') {
       const { AntColony } = CreateAntColony(P, nodes);
-      const antColony = new AntColony(30, 1, 3, 0.1, 1, 200, 0.001);
+      const antColony = new AntColony(200, 1, 3, 0.1, 1, 200, 0.001);
       antColony.reset();
       antColony.run();
       action = '';

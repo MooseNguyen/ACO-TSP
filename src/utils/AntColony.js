@@ -74,7 +74,7 @@ export function CreateAntColony(p, nodes) {
           clearInterval(_this.iteration);
           _this.drawBestTour();
         }
-      }, 50);
+      }, 10);
     }
 
     prepare() {
