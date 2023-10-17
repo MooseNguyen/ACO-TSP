@@ -1,6 +1,7 @@
 import { Action, Canvas } from './Components';
 import './App.css';
 import { useState } from 'react';
+import antImage from './assets/ant-28894.png';
 
 function App() {
   const [action, setAction] = useState('');
@@ -23,6 +24,9 @@ function App() {
         clearCanvasClick={clearCanvasHandle}
         startACOClick={startACOClick}
       />
+      <div className="image">
+        <img src={antImage} alt="logo-img" />
+      </div>
     </div>
   );
 }

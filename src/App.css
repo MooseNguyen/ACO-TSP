@@ -3,4 +3,16 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    position: relative;
+}
+
+.image {
+    position: absolute;
+    width: 20%;
+    top: 0;
+    right: 0;
+}
+
+.image img {
+    width: 80%;
 }

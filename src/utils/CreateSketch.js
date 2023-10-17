@@ -6,11 +6,6 @@ let nodes = [];
 let action = '';
 
 export function CreateSketch(p) {
-  // const [thisP, setThisP] = useState(undefined);
-
-  // useEffect(() => {
-  //   setThisP(p)
-  // }, [p])
 
   const myMousePressed = () => {
     if (p.mouseX < x && p.mouseY < y) {
