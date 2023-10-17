@@ -1,0 +1,31 @@
+.action {
+    width: 37%;
+}
+
+.title {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.action-btn {
+    margin-top: 50px;
+}
+
+.action-btn button {
+    margin-top: 10px;
+    padding: 5px 30px;
+    width: 120px;
+    height: 40px;
+    margin-right: 20px;
+    background-color: transparent;
+    border: 2px white solid;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    /* overflow: hidden; */
+}
+
+.action-btn button:hover {
+   background: #0611616d; 
+}
