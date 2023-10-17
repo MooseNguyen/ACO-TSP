@@ -4,7 +4,7 @@ import { useState } from 'react';
 import antImage from './assets/ant-28894.png';
 
 function App() {
-  const [action, setAction] = useState('');
+  const [action, setAction] = useState(undefined);
   
 
   const clearCanvasHandle = () => {

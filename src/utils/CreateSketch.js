@@ -3,10 +3,9 @@ import { CreateAntColony } from './AntColony';
 let x = 900;
 let y = 800;
 let nodes = [];
-let action = '';
+let action;
 
 export function CreateSketch(p) {
-
   const myMousePressed = () => {
     if (p.mouseX < x && p.mouseY < y) {
       p.ellipse(p.mouseX, p.mouseY, 15, 15);
@@ -47,16 +46,17 @@ export function CreateSketch(p) {
   const P = getP(p);
 
   p.draw = () => {
-    if (action === 'clear') {
-      clearCanvas();
-      action = '';
-    }
-    if (action === 'start') {
-      const { AntColony } = CreateAntColony(P, nodes);
-      const antColony = new AntColony(200, 1, 3, 0.1, 1, 500, 0.001);
-      antColony.reset();
-      antColony.run();
-      action = '';
+    if(action){
+       if (action === 'clear') {
+         clearCanvas();
+         action = '';
+       }else if (action === 'start') {
+         const { AntColony } = CreateAntColony(P, nodes);
+         const antColony = new AntColony(200, 3, 3, 0.1, 1, 500, 0.001);
+         antColony.reset();
+         antColony.run();
+         action = '';
+       }
     }
   };
 }
